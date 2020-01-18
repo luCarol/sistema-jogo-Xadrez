@@ -1,10 +1,10 @@
 package application;
 
-import boardgame.Board;
+import chess.ChessMatch;
 
 /**
  *
- * @author Luana
+ * @author Luana 
  */
 public class Program {
 
@@ -14,7 +14,8 @@ public class Program {
     public static void main(String[] args) {
         // TODO code application logic here
         
-        Board board = new Board(8, 8);
+        ChessMatch chessMatch = new ChessMatch();
+        UI.printBoard(chessMatch.getPieces());
         
     }
     
